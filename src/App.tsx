@@ -23,7 +23,7 @@ function App() {
     {
       id: 2,
       name: "Stefano Zino Colanino",
-      role: "CTO - Cloud Engineer",
+      role: "Cloud Engineer",
       content: "DevOps Engineer con enfoque en seguridad y escalabilidad. Especialista en AWS, Kubernetes y soluciones serverless. Experiencia en desarrollo backend, automatización con Python y scripting en Go para infraestructura como código.",
       linkedin: "https://linkedin.com/in/stefano-ziino-colanino",
       github: "https://github.com/StefanoZiinoC/StefanoZiinoC",
@@ -52,7 +52,7 @@ function App() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          Sobre Nosotros
+          About us
         </motion.h2>
         <GlowingCard className="max-w-3xl mx-auto bg-blue-50 mb-10">
           <h3 className="text-xl font-semibold text-blue-700 mb-3">Nuestras Capacidades Profesionales</h3>
@@ -72,7 +72,7 @@ function App() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          Casos de Éxito
+          Our Work
         </motion.h2>
 
         <div className="flex flex-col md:flex-row gap-6 justify-center mt-12">
@@ -88,10 +88,10 @@ function App() {
                 "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
             }}
           >
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">Migración a la Cloud de AWS</h3>
+            <h3 className="text-xl font-semibold text-blue-600 mb-2">Migrations to the Cloud</h3>
             <p className="text-gray-700 text-sm">
-              Ayudamos a una startup a migrar su stack completo desde Heroku a AWS, optimizando costos,
-              escalabilidad y disponibilidad. Ahora operan con una infraestructura robusta y segura en la nube.
+              Nuestras migraciones incluyen configuración de infraestructura como código, 
+              monitoreo avanzado y alta disponibilidad. Además de garantizar la seguridad, nos ocupamos de trasladar el conocimiento y formar al cliente.
             </p>
           </motion.div>
 
@@ -109,8 +109,9 @@ function App() {
           >
             <h3 className="text-xl font-semibold text-blue-600 mb-2">NewsPaper AI App</h3>
             <p className="text-gray-700 text-sm">
-              Desarrollamos una aplicación basada en IA que resume noticias automáticamente.
-              Actualmente está desplegada en AWS, funciona productivamente y recibe usuarios activos diariamente.
+              Desarrollamos una aplicación completa basada en IA que resume noticias automáticamente usando GPT-4. 
+              La app está desplegada en AWS con arquitectura serverless, maneja miles de usuarios diarios y 
+              procesa contenido en tiempo real de forma eficiente.
             </p>
           </motion.div>
 
@@ -126,10 +127,11 @@ function App() {
                 "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
             }}
           >
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">Landing Page para Startup</h3>
+            <h3 className="text-xl font-semibold text-blue-600 mb-2">Fast Development of MVPs</h3>
             <p className="text-gray-700 text-sm">
-              Creamos una landing page moderna y responsive para una empresa de tres personas, que les permitió
-              presentar su proyecto profesionalmente y captar sus primeros clientes.
+              Especializados en crear aplicaciones funcionales y atractivas en tiempo récord. 
+              Desde landing pages hasta aplicaciones web completas, entregamos soluciones que permiten 
+              a nuestros clientes validar ideas rápidamente y captar sus primeros usuarios.
             </p>
           </motion.div>
         </div>
@@ -142,117 +144,113 @@ function App() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          Tecnologías utilizadas
+          Our Tech Stack
         </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
+       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
           {/* Tarjeta 1 - React */}
-          <BackgroundGradient containerClassName="h-full">
-            <div className="bg-white shadow-xl rounded-2xl p-6 text-center h-full">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                alt="React"
-                className="h-16 mx-auto mb-4"
-              />
-              <p className="mt-2 text-gray-600">Librería de JavaScript para construir interfaces de usuario modernas y dinámicas.</p>
-            </div>
-          </BackgroundGradient>
+          <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+              alt="React"
+              className="h-16 mx-auto mb-4"
+            />
+            <p className="mt-2 text-gray-600">Librería de JavaScript para construir interfaces de usuario modernas y dinámicas.</p>
+          </div>
 
           {/* Tarjeta 2 - Tailwind */}
-          <BackgroundGradient containerClassName="h-full">
-            <div className="bg-white shadow-xl rounded-2xl p-6 text-center h-full">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                alt="Tailwind CSS"
-                className="h-16 mx-auto mb-4"
-              />
-              <p className="mt-2 text-gray-600">Framework de CSS con clases utilitarias para construir rápidamente diseños elegantes.</p>
-            </div>
-          </BackgroundGradient>
+          <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt="Tailwind CSS"
+              className="h-16 mx-auto mb-4"
+            />
+            <p className="mt-2 text-gray-600">Framework de CSS con clases utilitarias para construir rápidamente diseños elegantes.</p>
+          </div>
 
           {/* Tarjeta 3 - Vercel */}
-          <BackgroundGradient containerClassName="h-full">
-            <div className="bg-white shadow-xl rounded-2xl p-6 text-center h-full">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Vercel_logo_black.svg"
-                alt="Vercel"
-                className="h-16 mx-auto mb-4"
-              />
-              <p className="mt-2 text-gray-600">Plataforma para desplegar sitios web frontend de forma rápida, fácil y gratuita.</p>
-            </div>
-          </BackgroundGradient>
-          <BackgroundGradient containerClassName="h-full">
-            <div className="bg-white shadow-xl rounded-2xl p-6 text-center h-full">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-                alt="AWS"
-                className="h-16 mx-auto mb-4"
-              />
-              <p className="mt-2 text-gray-600">
-                Plataforma líder de servicios en la nube con soluciones escalables para empresas de todos los tamaños.
-              </p>
-            </div>
-          </BackgroundGradient>
-          <BackgroundGradient containerClassName="h-full">
-            <div className="bg-white shadow-xl rounded-2xl p-6 text-center h-full">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg"
-                alt="Terraform"
-                className="h-16 mx-auto mb-4"
-              />
-              <p className="mt-2 text-gray-600">
-                Herramienta de infraestructura como código para automatizar el aprovisionamiento de recursos en la nube.
-              </p>
-            </div>
-          </BackgroundGradient>
-          <BackgroundGradient containerClassName="h-full">
-            <div className="bg-white shadow-xl rounded-2xl p-6 text-center h-full">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg"
-                alt="Kubernetes"
-                className="h-16 mx-auto mb-4"
-              />
-              <p className="mt-2 text-gray-600">
-                Sistema de orquestación de contenedores para desplegar, escalar y administrar aplicaciones modernas.
-              </p>
-            </div>
-          </BackgroundGradient>
-          <BackgroundGradient containerClassName="h-full">
-            <div className="bg-white shadow-xl rounded-2xl p-6 text-center h-full">
-              <img
-                src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png"
-                alt="MongoDB Atlas"
-                className="h-16 mx-auto mb-4"
-              />
-              <p className="mt-2 text-gray-600">
-                Base de datos NoSQL como servicio, ideal para aplicaciones escalables y en tiempo real.
-              </p>
-            </div>
-          </BackgroundGradient>
-          <BackgroundGradient containerClassName="h-full">
-            <div className="bg-white shadow-xl rounded-2xl p-6 text-center h-full">
-              <img
-                src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png"
-                alt="ArgoCD"
-                className="h-16 mx-auto mb-4"
-              />
-              <p className="mt-2 text-gray-600">
-                Herramienta de entrega continua declarativa basada en Git para Kubernetes, ideal para GitOps.
-              </p>
-            </div>
-          </BackgroundGradient>
-          <BackgroundGradient containerClassName="h-full">
-            <div className="bg-white shadow-xl rounded-2xl p-6 text-center h-full">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Grafana_icon.svg"
-                alt="Grafana"
-                className="h-16 mx-auto mb-4"
-              />
-              <p className="mt-2 text-gray-600">
-                Plataforma de visualización y monitoreo de métricas, compatible con Prometheus, Loki y más.
-              </p>
-            </div>
-          </BackgroundGradient>
+          <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Vercel_logo_black.svg"
+              alt="Vercel"
+              className="h-16 mx-auto mb-4"
+            />
+            <p className="mt-2 text-gray-600">Plataforma para desplegar sitios web frontend de forma rápida, fácil y gratuita.</p>
+          </div>
+
+          {/* Tarjeta 4 - AWS */}
+          <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+              alt="AWS"
+              className="h-16 mx-auto mb-4"
+            />
+            <p className="mt-2 text-gray-600">
+              Plataforma líder de servicios en la nube con soluciones escalables para empresas de todos los tamaños.
+            </p>
+          </div>
+
+          {/* Tarjeta 5 - Terraform */}
+          <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg"
+              alt="Terraform"
+              className="h-16 mx-auto mb-4"
+            />
+            <p className="mt-2 text-gray-600">
+              Herramienta de infraestructura como código para automatizar el aprovisionamiento de recursos en la nube.
+            </p>
+          </div>
+
+          {/* Tarjeta 6 - Kubernetes */}
+          <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg"
+              alt="Kubernetes"
+              className="h-16 mx-auto mb-4"
+            />
+            <p className="mt-2 text-gray-600">
+              Sistema de orquestación de contenedores para desplegar, escalar y administrar aplicaciones modernas.
+            </p>
+          </div>
+
+          {/* Tarjeta 7 - MongoDB Atlas */}
+          <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
+            <img
+              src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png"
+              alt="MongoDB Atlas"
+              className="h-16 mx-auto mb-4"
+            />
+            <p className="mt-2 text-gray-600">
+              Base de datos NoSQL como servicio, ideal para aplicaciones escalables y en tiempo real.
+            </p>
+          </div>
+
+          {/* Tarjeta 8 - ArgoCD */}
+          <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
+            <img
+              src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png"
+              alt="ArgoCD"
+              className="h-16 mx-auto mb-4"
+            />
+            <p className="mt-2 text-gray-600">
+              Herramienta de entrega continua declarativa basada en Git para Kubernetes, ideal para GitOps.
+            </p>
+          </div>
+
+          {/* Tarjeta 9 - Grafana */}
+          <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Grafana_icon.svg"
+              alt="Grafana"
+              className="h-16 mx-auto mb-4"
+            />
+            <p className="mt-2 text-gray-600">
+              Plataforma de visualización y monitoreo de métricas, compatible con Prometheus, Loki y más.
+            </p>
+          </div>
+
+
         </div>
       </section>
       <section id='contact' className="py-16 bg-white">
@@ -264,7 +262,7 @@ function App() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          Cuerpo Técnico
+          Meet the Team
         </motion.h2>
 
         <TeamSpotlight members={teamMembers.map(member => ({
