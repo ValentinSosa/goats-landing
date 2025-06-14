@@ -4,7 +4,7 @@ import Stefano from './assets/Stefano.jpg';
 import Roco from './assets/Roco.jpg';
 import { motion } from 'framer-motion';
 import { GlowingCard } from './components/ui/GlowingCard';
-import { BackgroundGradient } from './components/ui/BackgroundGradient';
+// import { BackgroundGradient } from './components/ui/BackgroundGradient';
 import { TeamSpotlight } from './components/ui/TeamSpotlight';
 import { HeroSection } from './sections/Hero';
 import { GoatNavbar } from './components/GoatNavbar';
