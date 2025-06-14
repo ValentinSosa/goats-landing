@@ -44,7 +44,7 @@ function App() {
     <div className="font-sans text-gray-800 overflow-hidden">
       <GoatNavbar />
       <HeroSection />
-      <section className="bg-white text-center">
+      <section id='aboutus' className="bg-white text-center">
         <motion.h2
           className="text-3xl font-semibold mb-4"
           initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,7 @@ function App() {
         </GlowingCard>
       </section>
       {/* Success stories */}
-      <section className="bg-gray-100 py-16 px-8 text-center">
+      <section id='success' className="bg-gray-100 py-16 px-8 text-center">
         <motion.h2
           className="text-3xl font-semibold mb-8"
           initial={{ opacity: 0, y: 20 }}
@@ -134,7 +134,7 @@ function App() {
           </motion.div>
         </div>
       </section>
-      <section className="py-12 bg-gray-100">
+      <section id='tech' className="py-12 bg-gray-100">
         <motion.h2
           className="text-3xl font-bold text-center mb-8"
           initial={{ opacity: 0, y: 20 }}
@@ -255,7 +255,7 @@ function App() {
           </BackgroundGradient>
         </div>
       </section>
-      <section className="py-16 bg-white">
+      <section id='contact' className="py-16 bg-white">
 
         <motion.h2
           className="text-3xl font-bold text-center mb-10"
@@ -285,7 +285,9 @@ function App() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <p>&copy; {new Date().getFullYear()} Mi Landing Page. Todos los derechos reservados.</p>
+          <p className="text-sm text-gray-500 text-center">
+            &copy; {new Date().getFullYear()} Goat Solutions. All rights reserved.
+          </p>
         </motion.div>
       </footer>
     </div>

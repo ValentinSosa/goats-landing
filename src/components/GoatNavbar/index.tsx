@@ -15,12 +15,16 @@ import { useState } from "react";
 export function GoatNavbar() {
   const navItems = [
     {
-      name: "Features",
-      link: "#features",
+      name: "About us",
+      link: "#aboutus",
     },
     {
-      name: "Pricing",
-      link: "#pricing",
+      name: "Success",
+      link: "#success",
+    },
+    {
+      name: "Tech",
+      link: "#tech",
     },
     {
       name: "Contact",
@@ -38,9 +42,15 @@ export function GoatNavbar() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
+            <NavbarButton 
+              variant="primary" 
+              onClick={() => window.open('https://calendly.com/sziinocolanino/30-minutes-meeting', '_blank')}
+            >
+              Book a call
+            </NavbarButton>
           </div>
+        
         </NavBody>
 
         {/* Mobile Navigation */}
@@ -64,7 +74,7 @@ export function GoatNavbar() {
                 <span className="block">{item.name}</span>
               </a>
             ))}
-            <div className="flex w-full flex-col gap-4">
+            {/* <div className="flex w-full flex-col gap-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
@@ -79,7 +89,7 @@ export function GoatNavbar() {
               >
                 Book a call
               </NavbarButton>
-            </div>
+            </div> */}
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
