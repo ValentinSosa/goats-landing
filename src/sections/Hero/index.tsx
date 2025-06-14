@@ -5,7 +5,8 @@ import { SparklesEffect } from "../../components/ui/SparklesEffect";
 
 export const HeroSection = () => (
      <section className="relative min-h-screen flex flex-col items-center justify-center text-center p-10 bg-cover bg-center" style={{
-        backgroundImage: "url('https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0604%2Fr379658_2_1296x729_16%2D9.jpg')"
+        backgroundImage: "url('./src/assets/background.png')"
+        // backgroundImage: "url('https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0604%2Fr379658_2_1296x729_16%2D9.jpg')"
       }}>
         {/* Background overlay */}
         <div className="absolute inset-0 bg-black/60 z-0" />
@@ -18,7 +19,7 @@ export const HeroSection = () => (
         >
           <SparklesEffect id="hero-title">
             <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">
-              Welcome to your GOAT Landing Page 🐐
+              Welcome to GOAT Solutions 
             </h1>
           </SparklesEffect>
 
