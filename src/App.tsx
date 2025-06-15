@@ -26,7 +26,7 @@ function App() {
       role: "Cloud Engineer",
       content: "DevOps Engineer con enfoque en seguridad y escalabilidad. Especialista en AWS, Kubernetes y soluciones serverless. Experiencia en desarrollo backend, automatización con Python y scripting en Go para infraestructura como código.",
       linkedin: "https://linkedin.com/in/stefano-ziino-colanino",
-      github: "https://github.com/StefanoZiinoC/StefanoZiinoC",
+      github: "https://github.com/StefanoZiinoC",
       image: Stefano
     },
     {
