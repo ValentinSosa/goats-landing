@@ -1,6 +1,8 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  --goat-text: #323C4D;
+  --goat-rainbow-bg: "linear-gradient(to top right, #e2e2ffff 0%, #e4fbffff 25%, #ffefffff 50%, #fcfcffff 75%, #e5e5ffff 100%)";
 }
 
 .logo {

@@ -1,57 +1,55 @@
 import { motion } from "framer-motion";
 import { FloatingText } from "../../components/ui/FloatingText";
-import { SparklesEffect } from "../../components/ui/SparklesEffect";
+// import { SparklesEffect } from "../../components/ui/SparklesEffect";
+import { NavbarButton } from "../../components/ui/resizable-navbar";
+import { FlipWords } from "../../components/ui/flip-words";
 
+const words = [
+  'Solutions',
+  'Services',
+  'Products',
+]
 
 export const HeroSection = () => (
-     <section className="relative min-h-screen flex flex-col items-center justify-center text-center p-10 bg-cover bg-center" style={{
-        backgroundImage: "url('./src/assets/background.png')"
-        // backgroundImage: "url('https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0604%2Fr379658_2_1296x729_16%2D9.jpg')"
-      }}>
-        {/* Background overlay */}
-        <div className="absolute inset-0 bg-black/60 z-0" />
+  <section className="relative min-h-screen flex flex-col items-center justify-center text-center p-10 bg-cover bg-center">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+      className="z-10 text-white flex flex-col items-center justify-center space-y-4"
+    >
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          className="z-10 text-white"
+      <span className="inline-flex items-center rounded-xl bg-gray-100 px-3 py-1 text-[10px] sm:text-xs font-small text-gray-600">
+        POWER AND ATTITUDE, JUST LIKE A REAL GOAT
+      </span>
+
+      {/* <SparklesEffect id="hero-title"> */}
+        <div className="text-5xl font-bold dark:text-goatText">
+          GOAT
+          <FlipWords words={words} className="dark:text-goatText" />
+        </div>
+      {/* </SparklesEffect> */}
+
+
+      <FloatingText
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        className="text-md text-goatText break-words max-w-lg mx-auto"
+        delay={0.5}
+      />
+
+      <div className="flex flex-col sm:flex-row items-center justify-center space-x-0 sm:space-x-2 space-y-2 sm:space-y-0 mt-6">
+        <NavbarButton
+          variant="primary"
         >
-          <SparklesEffect id="hero-title">
-            <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">
-              Welcome to GOAT Solutions 
-            </h1>
-          </SparklesEffect>
+          Book a call
+        </NavbarButton>
+        <NavbarButton
+          variant="secondary"
+        >
+          Power Up
+        </NavbarButton>
+      </div>
 
-          <FloatingText
-            text="Power, simplicity and attitude—just like a real goat."
-            className="text-xl mb-6"
-            delay={0.5}
-          />
-
-          <motion.button
-            className="bg-white text-black px-6 py-3 rounded-lg shadow-md transition hover:bg-gray-200 font-semibold"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get Started
-          </motion.button>
-        </motion.div>
-
-        {/* Optional animated color halo behind */}
-        {/* <div className="absolute inset-0 w-full h-full pointer-events-none">
-          <motion.div
-            animate={{
-              scale: [1, 1.1, 1.2, 1.1, 1],
-              rotate: [0, 10, 0, -10, 0],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 25,
-              ease: "linear"
-            }}
-            className="absolute -inset-[10%] opacity-20 bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-600 rounded-full blur-3xl"
-          />
-        </div> */}
-      </section>
+    </motion.div>
+  </section>
 )
