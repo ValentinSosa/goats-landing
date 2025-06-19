@@ -15,7 +15,6 @@ export default defineConfig({
       "framer-motion",
       "clsx",
       "tailwind-merge",
-      "@tabler/icons-react",
       "motion"
     ]
   }

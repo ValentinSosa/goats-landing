@@ -10,7 +10,7 @@ import { Tech } from './sections/Tech';
 
 function App() {
   return (
-    <div className="font-sans text-gray-800 overflow-hidden">
+    <div className="font-sans text-gray-800">
       <GoatNavbar />
       <HeroSection />
       <Services />

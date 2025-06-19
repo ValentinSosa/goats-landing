@@ -11,7 +11,7 @@ const words = [
 ]
 
 export const HeroSection = () => (
-  <section className="relative min-h-screen flex flex-col items-center justify-center text-center p-10 bg-cover bg-center">
+  <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center p-10 mb-[-4rem] bg-cover bg-center">
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}

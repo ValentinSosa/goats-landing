@@ -19,20 +19,12 @@ export function GoatNavbar() {
       link: "#services",
     },
     {
-      name: "About Us",
-      link: "#about",
-    },
-    {
-      name: "Tech",
-      link: "#tech",
-    },
-    {
       name: "Stories",
       link: "#stories",
     },
     {
-      name: "Contact",
-      link: "#contact",
+      name: "About Us",
+      link: "#about",
     },
   ];
 
