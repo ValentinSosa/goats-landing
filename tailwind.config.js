@@ -6,7 +6,12 @@ export default {
     // "./node_modules/acceternity-ui/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        goatText: 'var(--goat-text)',
+        rainbowBg: 'var(--goat-rainbow-bg)',
+      },
+    },
   },
   plugins: [],
 }

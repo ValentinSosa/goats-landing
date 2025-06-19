@@ -15,20 +15,16 @@ import { useState } from "react";
 export function GoatNavbar() {
   const navItems = [
     {
-      name: "About us",
-      link: "#aboutus",
+      name: "Services",
+      link: "#services",
     },
     {
-      name: "Success",
-      link: "#success",
+      name: "Stories",
+      link: "#stories",
     },
     {
-      name: "Tech",
-      link: "#tech",
-    },
-    {
-      name: "Contact",
-      link: "#contact",
+      name: "About Us",
+      link: "#about",
     },
   ];
 
@@ -37,12 +33,10 @@ export function GoatNavbar() {
   return (
     <div className="relative w-full">
       <Navbar>
-        {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
             <NavbarButton 
               variant="primary" 
               onClick={() => window.open('https://calendly.com/sziinocolanino/30-minutes-meeting', '_blank')}
