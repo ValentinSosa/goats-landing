@@ -21,20 +21,10 @@ export const Contact = () => {
             github: "https://github.com/StefanoZiinoC",
             image: 'Stefano.jpg'
         },
-        {
-            id: 3,
-            name: "Roco Sittoni",
-            role: "Software Engineer - IA specialist",
-            content: "Ingeniero en software con foco en inteligencia artificial, machine learning y ciencia de datos. Fuerte dominio de soluciones cloud y arquitecturas serverless. Apasionado por aplicar IA en proyectos reales.",
-            linkedin: "https://www.linkedin.com/in/roco-sittoni-a353141b2",
-            github: "https://github.com/rocoSittoni/rocoSittoni",
-            image: 'Roco.jpg'
-        }
     ];
 
     return (
-        <section id='contact' className="py-16 bg-white">
-
+        <section id='about' className="py-16 bg-white">
             <motion.h2
                 className="text-3xl font-bold text-center mb-10"
                 initial={{ opacity: 0, y: 20 }}

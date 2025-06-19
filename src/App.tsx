@@ -1,11 +1,11 @@
 import './App.css';
 import { HeroSection } from './sections/Hero';
 import { GoatNavbar } from './components/GoatNavbar';
-import { Stories } from './sections/Stories';
+// import { Stories } from './sections/Stories';
 import { GoatFooter } from './components/GoatFooter';
-import { Contact } from './sections/Contact';
+// import { Contact } from './sections/Contact';
 import { Services } from './sections/Services';
-import { About } from './sections/About';
+// import { About } from './sections/About';
 import { Tech } from './sections/Tech';
 
 function App() {
@@ -14,10 +14,10 @@ function App() {
       <GoatNavbar />
       <HeroSection />
       <Services />
-      <About />
       <Tech />
-      <Stories />
-      <Contact />
+      {/* <Stories /> */}
+      {/* <About /> */}
+      {/* <Contact /> */}
       <GoatFooter />
     </div>
   );
