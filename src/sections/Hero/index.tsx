@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FloatingText } from "../../components/ui/FloatingText";
 // import { SparklesEffect } from "../../components/ui/SparklesEffect";
-import { NavbarButton } from "../../components/ui/resizable-navbar";
+// import { NavbarButton } from "../../components/ui/resizable-navbar";
 import { FlipWords } from "../../components/ui/flip-words";
 
 const words = [
@@ -11,7 +11,7 @@ const words = [
 ]
 
 export const HeroSection = () => (
-  <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center p-10 mb-[-4rem] bg-cover bg-center">
+  <section className="relative min-h-[100vh] flex flex-col items-center justify-center text-center p-10 bg-cover bg-center">
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -24,20 +24,20 @@ export const HeroSection = () => (
       </span>
 
       {/* <SparklesEffect id="hero-title"> */}
-        <div className="text-5xl font-bold dark:text-goatText">
+        <div className="text-5xl font-bold text-goatText dark:text-goatText">
           GOAT
-          <FlipWords words={words} className="dark:text-goatText" />
+          <FlipWords words={words} className="text-goatText dark:text-goatText" />
         </div>
       {/* </SparklesEffect> */}
 
 
       <FloatingText
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        text="Scaling the peaks of tomorrow's technology."
         className="text-md text-goatText break-words max-w-lg mx-auto"
         delay={0.5}
       />
 
-      <div className="flex flex-col sm:flex-row items-center justify-center space-x-0 sm:space-x-2 space-y-2 sm:space-y-0 mt-6">
+      {/* <div className="flex flex-col sm:flex-row items-center justify-center space-x-0 sm:space-x-2 space-y-2 sm:space-y-0 mt-6">
         <NavbarButton
           variant="primary"
         >
@@ -48,7 +48,7 @@ export const HeroSection = () => (
         >
           Power Up
         </NavbarButton>
-      </div>
+      </div> */}
 
     </motion.div>
   </section>

@@ -19,13 +19,13 @@ export function GoatNavbar() {
       link: "#services",
     },
     {
-      name: "Stories",
-      link: "#stories",
+      name: "tech",
+      link: "#tech",
     },
-    {
-      name: "About Us",
-      link: "#about",
-    },
+    // {
+    //   name: "About Us",
+    //   link: "#about",
+    // },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
