@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import AnimatedBeamDemo from "../../components/AnimatedBeams"
 
 export const Tech = () => {
   return (
@@ -13,8 +14,9 @@ export const Tech = () => {
         Our Tech Stack
       </motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
-        {/* Tarjeta 1 - React */}
+      <AnimatedBeamDemo />
+
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
         <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
@@ -24,7 +26,6 @@ export const Tech = () => {
           <p className="mt-2 text-gray-600">Librería de JavaScript para construir interfaces de usuario modernas y dinámicas.</p>
         </div>
 
-        {/* Tarjeta 2 - Tailwind */}
         <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
@@ -34,7 +35,6 @@ export const Tech = () => {
           <p className="mt-2 text-gray-600">Framework de CSS con clases utilitarias para construir rápidamente diseños elegantes.</p>
         </div>
 
-        {/* Tarjeta 3 - Vercel */}
         <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Vercel_logo_black.svg"
@@ -44,7 +44,6 @@ export const Tech = () => {
           <p className="mt-2 text-gray-600">Plataforma para desplegar sitios web frontend de forma rápida, fácil y gratuita.</p>
         </div>
 
-        {/* Tarjeta 4 - AWS */}
         <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
@@ -56,7 +55,6 @@ export const Tech = () => {
           </p>
         </div>
 
-        {/* Tarjeta 5 - Terraform */}
         <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg"
@@ -68,7 +66,6 @@ export const Tech = () => {
           </p>
         </div>
 
-        {/* Tarjeta 6 - Kubernetes */}
         <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg"
@@ -80,7 +77,6 @@ export const Tech = () => {
           </p>
         </div>
 
-        {/* Tarjeta 7 - MongoDB Atlas */}
         <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
           <img
             src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png"
@@ -92,7 +88,6 @@ export const Tech = () => {
           </p>
         </div>
 
-        {/* Tarjeta 8 - ArgoCD */}
         <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
           <img
             src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png"
@@ -104,7 +99,6 @@ export const Tech = () => {
           </p>
         </div>
 
-        {/* Tarjeta 9 - Grafana */}
         <div className="bg-white rounded-2xl p-6 text-center h-full shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-50">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Grafana_icon.svg"
@@ -117,7 +111,7 @@ export const Tech = () => {
         </div>
 
 
-      </div>
+      </div> */}
     </section>
   )
 }
