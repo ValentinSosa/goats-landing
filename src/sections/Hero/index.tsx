@@ -11,12 +11,12 @@ const words = [
 ]
 
 export const HeroSection = () => (
-  <section className="relative min-h-[100vh] flex flex-col items-center justify-center text-center p-10 bg-cover bg-center">
+  <section className="relative min-h-[100vh] flex flex-col items-center justify-center text-center p-10 bg-cover bg-center overflow-hidden">
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
-      className="z-10 text-white flex flex-col items-center justify-center space-y-4"
+      className="z-10 text-white flex flex-col items-center justify-center space-y-4 h-[350px]"
     >
 
       <span className="inline-flex items-center rounded-xl bg-gray-100 px-3 py-1 text-[10px] sm:text-xs font-small text-gray-600">
