@@ -6,7 +6,7 @@ import { GoatFooter } from './components/GoatFooter';
 // import { Contact } from './sections/Contact';
 import { Services } from './sections/Services';
 // import { About } from './sections/About';
-import { Tech } from './sections/Tech';
+// import { Tech } from './sections/Tech';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <GoatNavbar />
       <HeroSection />
       <Services />
-      <Tech />
+      {/* <Tech /> */}
       {/* <Stories /> */}
       {/* <About /> */}
       {/* <Contact /> */}

@@ -18,10 +18,10 @@ export function GoatNavbar() {
       name: "Services",
       link: "#services",
     },
-    {
-      name: "tech",
-      link: "#tech",
-    },
+    // {
+    //   name: "tech",
+    //   link: "#tech",
+    // },
     // {
     //   name: "About Us",
     //   link: "#about",
