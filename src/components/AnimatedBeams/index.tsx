@@ -57,7 +57,7 @@ export default function AnimatedBeamDemo() {
           <Circle ref={div2Ref}>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Applications-database.svg/1024px-Applications-database.svg.png"
-              alt="Postgresql"
+              alt="Database"
               className="h-126 mx-auto"
             /> 
           </Circle>
