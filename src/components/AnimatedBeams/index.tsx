@@ -56,7 +56,7 @@ export default function AnimatedBeamDemo() {
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div2Ref}>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/640px-Postgresql_elephant.svg.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Applications-database.svg/1024px-Applications-database.svg.png"
               alt="Postgresql"
               className="h-126 mx-auto"
             /> 
@@ -70,8 +70,8 @@ export default function AnimatedBeamDemo() {
           </Circle>
           <Circle ref={div6Ref}>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg"
-              alt="Kubernetes"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+              alt="AWS"
               className="h-126 mx-auto"
             /> 
           </Circle>
