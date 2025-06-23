@@ -36,7 +36,7 @@ goat-landing/
 
 1. Cloná el repositorio:
    ```bash
-   git clone https://github.com/tefazc/landing-page.git
+   git clone https://github.com/ValentinSosa/landing-page.git
    cd landing-page
    ```
 2. Instalá dependencias:
